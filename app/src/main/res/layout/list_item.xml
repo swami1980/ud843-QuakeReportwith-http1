@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/mag1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:textAlignment="center"
+
+        android:gravity="center_vertical"
+        android:background="@drawable/magnitude_circle"
+        tools:text="5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list1"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:background="@color/colorPrimary"
+
+        >
+
+
+        <TextView
+            android:id="@+id/text1"
+            style = "@style/FontStyle"
+            tools:text="close to"
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            style = "@style/FontStyle"
+            tools:text="San francisco"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list2"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:background="@color/colorPrimary"
+
+        >
+
+
+        <TextView
+            android:id="@+id/date1"
+            style = "@style/FontStyle"
+            tools:text="2/2/2017"
+            />
+        <TextView
+            android:id="@+id/time1"
+            style = "@style/FontStyle"
+            tools:text="10:10pm" />
+    </LinearLayout>
+</LinearLayout>
